@@ -26,6 +26,18 @@ namespace AM1gara
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            //Khai bao css o day, vi du
+            bundles.Add(new StyleBundle("~/Content/MYCSS").Include(
+                      "~/Content/my_css.css"));
+
+            //Neu co nhieu page can dung thi cho vao layout -> Shared/,,,
+
+            //Neu chi cho 1 page
+
+            bundles.Add(new StyleBundle("~/Content/OnlyForHome").Include(
+                      "~/Content/my_css.css"));
+
         }
     }
 }

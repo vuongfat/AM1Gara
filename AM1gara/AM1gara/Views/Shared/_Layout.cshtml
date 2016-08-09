@@ -7,6 +7,10 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
+    @* Can gi thi pass o day *@
+
+    @Styles.Render("~/Content/MYCSS")
+
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -40,5 +44,8 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+    @* Tuong tu cho JS *@
+    @Scripts.Render("~/bundles/MyJJS")
 </body>
 </html>
